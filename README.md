@@ -3,6 +3,8 @@ img2x
 
 img2x is a jQuery plugin designed to replace standard resolution images with their @2x counterpart.
 
+For background retina images you can just use straight CSS, but with <img\> tags on the page, you need something a little different.
+
 It is designed to work with normal image syntax:
 
       <img src="img.png" alt="" width="100" height="100" />
@@ -14,6 +16,10 @@ by just adding a class name (which you can configure):
 Then just make sure you have the @2x version available, and the image source will automatically update to:
 
       <img class="img2x" src="img@2x.png" alt="" width="100" height="100" />
+
+jQuery function reference:
+
+      $("img").img2x();
 
 #### Notes
 
