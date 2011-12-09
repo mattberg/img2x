@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+
+	<title>img2x Example</title>
+	<meta name="description" content="Demo showing how img@x works.">
+	<meta name="author" content="Matt Berg">
+	
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+	<link rel="stylesheet" href="../img2x.min.css" />
+	<style>
+		html, body {
+			background: #aaa;
+		}
+		h1, p {
+			margin: 1em;
+			font-size: 1em;
+			text-align: center;
+		}
+	</style>
+</head>
+
+<body>
+
+	<div id="container">
+	
+		<header>
+			<h1>img2x Example</h1>
+		</header>
+		
+		<div id="main" role="main">
+			<p><img src="img.png" alt="" width="285" height="185" /></p>
+			<p><img class="img2x" src="img.png" alt="" width="285" height="185" /></p>
+		</div>
+		
+	</div>
+
+	<script src="../jquery-1.7.1.min.js"></script>
+	<script src="../img2x.min.js"></script>
+	<script>
+	(function($) {
+		$(document).ready(function() {
+			$("#main img").img2x();
+		});
+	})(jQuery);
+	</script>
+
+</body>
+</html>
