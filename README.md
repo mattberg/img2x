@@ -15,8 +15,11 @@ Then just make sure you have the @2x version available, and the image source wil
 
       <img class="img2x" src="img@2x.png" alt="" width="100" height="100" />
 
-Licensing
----------
+#### Notes
+
+* This will actually force the browser to load both images, which is not optimal for performance/bandwidth issues
+
+## Licensing
 
 This is free and unencumbered software released into the public domain.
 
@@ -43,8 +46,7 @@ OTHER DEALINGS IN THE SOFTWARE.
 
 For more information, please refer to <http://unlicense.org/>
 
-Changelog
----------
+## Changelog
 
 * _v1.00_ 2011-12-09
  * public release
